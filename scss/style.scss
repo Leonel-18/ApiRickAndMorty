@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url(../assets/get_schwifty.ttf);
+:root{
+    --Galactic-Purple: #6a0dad;
+    --orange: #ff7f0e;
+    --toxic-green: #a4cd39;
+    --portal-blue: #240046;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: 'Bangers', cursive;
+    margin: 0px auto;
+    background: radial-gradient(circle 500px,gold 10%, var(--orange) 50%, #240046 55%, #10002b 75%);
+    
+    .header{
+        background-color: var(--toxic-green);
+        box-shadow: 0px 3px 6px var(--toxic-green);
+        height: 5rem;
+        width: 100%;
+        margin-bottom: 100px;
+
+        .nav-bar{
+            height: 100%;
+            padding: 0px 1.25rem;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                height: 100%;
+
+                .title{
+                    color: var(--Galactic-Purple);
+                    font-family: 'Get Schwifty', cursive;
+                }
+
+                .down{
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        padding: 0px 20px;
+        gap: 1.25rem;
+
+        .tarjeta{
+            display: flex;
+            flex-direction: column;
+            width: 18.75rem;
+            background-color: var(--toxic-green);
+            border-radius: 15px;
+
+            .img{
+                img{
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 18.75rem;
+                }
+            }
+            .info{ 
+                padding: 10px;
+                
+                h2{
+                    padding: 0.25rem;
+                    color: #ff7f0e;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                }
+                p{
+                    font-family: 'Get Schwifty', cursive;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+}
